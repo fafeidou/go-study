@@ -9,4 +9,10 @@ func main() {
 		numSlice = append(numSlice, i)
 		fmt.Printf("%v  len:%d  cap:%d  ptr:%p\n", numSlice, len(numSlice), cap(numSlice), numSlice)
 	}
+
+	var a = make([]string, 5, 10)
+	for i := 0; i < 10; i++ {
+		a = append(a, fmt.Sprintf("%v", i))
+	}
+	fmt.Println(a)
 }
